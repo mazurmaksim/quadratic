@@ -14,9 +14,6 @@ public class OperationServiceImpl implements OperationService {
         Double r_x1 = null;
         Double r_x2 = null;
 
-        if (a == 0)
-            throw new ArithmeticException();
-
         double discriminant = Discriminant(a, b, c);
         if (discriminant > 0) {
             r_x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
@@ -25,7 +22,7 @@ public class OperationServiceImpl implements OperationService {
             r_x1 = -b / (2 * a);
         } else {
 
-            throw new RuntimeException("Дискримінант менший нуля");
+            throw new RuntimeException("The discriminant is less than zero");
         }
 
         Calc calc = new Calc(a, b, c, r_x1, r_x2);
