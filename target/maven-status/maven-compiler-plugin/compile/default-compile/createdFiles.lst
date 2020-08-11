@@ -1,0 +1,6 @@
+com\quadratic\equation\service\CalculationService.class
+com\quadratic\equation\service\OperationServiceImpl.class
+com\quadratic\equation\service\OperationService.class
+com\quadratic\equation\service\CalculationServiceImpl.class
+com\quadratic\equation\controller\MainController.class
+com\quadratic\equation\entity\Calc.class
